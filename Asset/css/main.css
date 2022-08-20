@@ -23,10 +23,171 @@
     font-weight: normal;
 }
 
-h1{
-    color: black;
-    font-family: Soukou, SourceSerif,serif;
-}
+
+
 body{
-    background-color: aliceblue;
+    background-color: #f5f8fa;
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    color: #182026;
+    font-family: SourceSerif,serif;
+}
+h2{
+    color: #182026;
+    font-family: SourceSerif,serif;
+    font-size: 16px;
+}
+p{
+    color: #182026;
+    font-family: SourceSerif,serif;
+    font-size: 14px;
+}
+header {
+
+    background-color:#f5f8fa;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #182026;
+    z-index: 9999;
+}
+.buttons {
+    /* Background color */
+    background-color: #f5f8fa;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    /* Stick to the top */
+    position: sticky;
+    top: 0;
+
+    /* Displayed on top of other rows when scrolling */
+    z-index: 9999;
+}
+.header_name{
+    color: #182026;
+    font-family: SourceSerif,serif;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+
+.items{
+    float:center;
+    border-width: 20px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #333333;
+}
+.items>h1{
+    color: #182026;
+    font-family: SourceSerif,serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin: 0px;
+}
+.items>subh1{
+    color: #182026;
+    font-family: SourceSerif,serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__main {
+    /* Take the remaining height */
+    flex-grow: 1;
+
+    /* Layout the left sidebar, main content and right sidebar */
+    display: flex;
+    flex-direction: row;
+}
+
+.container__left {
+    width: 25%;
+    background-color: #f5f8fa;
+    margin: 8px;
+    border-right:1px double #5c7080;
+}
+
+.container__middle {
+    /* Take the remaining width */
+    width: 75%;
+    flex-grow: 1;
+    background-color: #f5f8fa;
+    margin: 8px;
+}
+.columncard {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    border-bottom: 1px solid #5c7080;
+    border-top: 1px solid #5c7080;
+    margin-bottom: 8px;
+}
+
+.columncard__cover {
+    height: 100%;
+    width: 100%;
+}
+
+.columncard__content {
+    /* Take available height */
+    flex: 1;
+}
+.cards {
+    /* It is split into 3 columns */
+    column-count: 3;
+
+    /* The space between columns */
+    column-gap: 1rem;
+
+    /* Misc */
+    width: 100%;
+}
+
+.cards__item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 12px ;
+    opacity: 75%;
+}
+.cards__item:hover{
+    background-color: #f4f4f4;
+    opacity: 100%;
+}
+.button {
+    /* Center the content */
+    width: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 0px;
+    border: 0;
+    background-color: #f5f8fa;
+}
+.button:hover{
+    color: #f5f8fa;
+    background-color: #e1e1e1;
+}
+.button:active{
+    color: #f5f8fa;
+    background-color: #738694;
 }
