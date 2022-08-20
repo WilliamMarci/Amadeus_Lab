@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Soukou;
+    src: url(../font/SoukouMincho-2.ttf);
+    }
+@font-face {
+    font-family: SourceSan;
+    src: url(../font/sourceSan/SourceHanSansCN-Heavy.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: SourceSan;
+    src:url(../font/sourceSan/SourceHanSansCN-Light.otf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: SourceSerif;
+    src:url(../font/sourceSerif/SourceHanSerifCN-Heavy.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: SourceSerif;
+    src:url(../font/sourceSerif/SourceHanSerifCN-Light.otf);
+    font-weight: normal;
+}
+
+h1{
+    color: black;
+    font-family: Soukou, SourceSerif,serif;
+}
+body{
+    background-color: aliceblue;
+}
